@@ -1,0 +1,12 @@
+name: 'Azure Function Time'
+description: 'Connect to an Azure Function to get the current date and time'
+inputs:
+  function-url:
+    description: 'URL of the Azure Function endpoint'
+    required: true
+outputs:
+  time:
+    description: 'The current date and time retrieved from the Azure Function'
+runs:
+  using: 'node12'
+  main: 'index.js'
