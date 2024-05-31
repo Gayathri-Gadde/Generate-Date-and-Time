@@ -5,8 +5,8 @@ inputs:
     description: 'URL of the Azure Function endpoint'
     required: true
 outputs:
-  time:
+  currentDateTime:
     description: 'The current date and time retrieved from the Azure Function'
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'index.js'
