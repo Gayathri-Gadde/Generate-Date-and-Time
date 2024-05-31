@@ -4,7 +4,7 @@ const axios = require('axios');
 async function getCurrentDateTime(functionUrl) {
     try {
         const response = await axios.get(functionUrl);
-        return response.currentDate;
+        return response.body;
     } catch (error) {
         throw new Error(`Failed to retrieve date and time from Azure Function: ${error.message}`);
     }
