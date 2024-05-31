@@ -19,7 +19,7 @@ async function run() {
         const currentDateTime = await getCurrentDateTime(functionUrl);
 
         // Set the output with the current date and time
-        core.setOutput('current-date-time', currentDateTime);
+        core.setOutput('currentDateTime', currentDateTime);
     } catch (error) {
         // Set failure message if an error occurs
         core.setFailed(error.message);
